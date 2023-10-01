@@ -1,0 +1,28 @@
+{
+  "name": "ng-dyno-form",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@ng-select/ng-select": "^11.1.1",
+    "bootstrap": "^5.2.3",
+    "ngx-bootstrap": "^11.0.2"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "module": "fesm2022/ng-dyno-form.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ng-dyno-form.mjs",
+      "esm": "./esm2022/ng-dyno-form.mjs",
+      "default": "./fesm2022/ng-dyno-form.mjs"
+    }
+  }
+}
