@@ -4,12 +4,15 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import * as i0 from "@angular/core";
 export declare class NgDynoFormComponent {
     private fb;
-    config: DynoFormConfig[];
+    config: DynoFormConfig[] | any;
     mainClass: any;
     mode: 'light' | 'dark';
     callBack: EventEmitter<any>;
     dynamicForm: FormGroup;
     passwordVisibility: {
+        [fieldName: string]: boolean;
+    };
+    requiredFields: {
         [fieldName: string]: boolean;
     };
     selectList: {
@@ -28,23 +31,19 @@ export declare class NgDynoFormComponent {
     get formValues(): any;
     hasCtrl: (ctrl: any) => boolean;
     hasAllKeys: (arr: any[]) => boolean;
-    filterConfig: (key: any, val?: any, bool?: boolean) => DynoFormConfig[];
-    getTypeKeys: (type: any, value?: any, bool?: boolean) => any[];
+    filterConfig: (key: any, val?: any, bool?: boolean) => any;
+    getTypeKeys: (type: any, value?: any, bool?: boolean) => any;
     getTypeValues: (type: any, value?: any, bool?: boolean) => any;
     addValidation(validation: any[], ...ctrls: string[]): void;
     clearValidation(...ctrls: string[]): void;
     setValue(ctrl: string, value: any): void;
     patchValue(obj: any): void;
-    resetValue(...ctrls: any): void;
+    resetValue(type: 'section' | 'all', ...ctrls: any): void;
     disableField(...ctrls: any): void;
     enableField(...ctrls: any): void;
-    sectionValidator(section: string): boolean;
+    sectionValidator(section?: string): any;
     sectionSubmit(section: string): {
-        valid: boolean;
-        values: any;
-    };
-    formsubmit(): {
-        valid: boolean;
+        valid: any;
         values: any;
     };
     eventCall(e: any, type: string, section: any, name: string, submit?: any): void;
