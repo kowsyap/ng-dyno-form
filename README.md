@@ -232,6 +232,6 @@ For a complete reference of the `DynoFormConfig` interface, see the [API Referen
 
 ## License
 
-This library is licensed under the [MIT License](#).
+This library is licensed under the [MIT License](LICENSE.txt).
 
 ---
