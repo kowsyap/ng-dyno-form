@@ -1,3 +1,4 @@
+⚠️ This repo has moved. Source, issues and releases are now at kowsyap/dynoForm. The npm package ng-dyno-form is published from there.
 
 # ng-dyno-form Library
 
